@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
+import com.juegoinfantil.R;
 import android.app.ActionBar.LayoutParams;
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -109,7 +110,10 @@ public class MainActivity extends Activity{
 	    String salida = "";
 	    for (String s : letters)
 	        salida += s;
-	 
+	    
+	    if (salida.equals(str)){
+	    	return shuffle(salida);
+	    }
 	    return salida;
 	 
 	}
